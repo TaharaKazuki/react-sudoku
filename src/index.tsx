@@ -2,13 +2,21 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { reportWebVitals } from './core'
 import { ThemeProvider } from 'styled-components'
+
+import { Card, Content, Grid, Title } from './components'
+
 import { GlobalStyles, theme } from './styles'
 
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <h1>Hello Reactaa</h1>
+      <Content data-cy="content">
+        <Title data-cy="title">Sudoku</Title>
+        <Card data-cy="card">
+          <Grid />
+        </Card>
+      </Content>
     </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
