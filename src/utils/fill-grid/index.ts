@@ -1,4 +1,4 @@
-import { GRID, NUMBERS } from '../../type'
+import { GRID, NUMBERS } from 'type'
 
 const gridExample: GRID = [
   [0, 0, 0, 0, 0, 0, 0, 0, 0],
